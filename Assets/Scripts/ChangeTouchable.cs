@@ -35,7 +35,7 @@ public class ChangeTouchable : MonoBehaviour
             SwitchList[_curIndex].SetActive(false);
             _curIndex = (_curIndex + 1) % n;
             SwitchList[_curIndex].SetActive(true);
-            if (_curIndex == 6)
+            if (_curIndex > 2)
             {
                 _handMover.FreeMove = true;
             }

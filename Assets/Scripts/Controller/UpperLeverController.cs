@@ -151,7 +151,7 @@ public class UpperLeverController : MonoBehaviour {
 		}
 		foreach (Collider collider in others)
 		{
-			if (collider.gameObject.layer == handLayerNum && collider.gameObject.name.Contains("thumb")) {
+			if (collider.gameObject.layer == handLayerNum) {
 				collideWithHand = true;
 				break;
 			}
